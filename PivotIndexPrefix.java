@@ -18,7 +18,7 @@ public class PivotIndexPrefix {
 		int n=nums.length;
 		int[]p =new int[n];
 		p[0]=nums[0];
-		for(int i=0;i<n;i++) {
+		for(int i=1;i<n;i++) {
 			p[i]=nums[i]+p[i-1];
 		}
 		for(int i=0;i<n;i++) {
@@ -39,5 +39,6 @@ public class PivotIndexPrefix {
 		
 
 	}
+
 
 
