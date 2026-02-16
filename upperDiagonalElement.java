@@ -1,6 +1,7 @@
 package dsa2026;
 import java.util.Scanner;
-public class userdefinedMatrix {
+
+public class upperDiagonalElement {
 
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
@@ -21,24 +22,18 @@ public class userdefinedMatrix {
 	                System.out.print(a[i][j] + " ");
 	            }
 	        }
-		
-	         int sum = 0;
-	         for (int i = 0; i < rows && i < cols; i++) {	        	  
-	               sum += a[i][i];
-	               }
-
-	            System.out.println("Sum of diagonal elements = " + sum);
+	        int sum=0;
+	        System.out.println("sum of upper diagonal matrix:");
+	        for(int i=0;i<rows;i++) {
+	        	for(int j=0;j<cols;j++) {
+	        		if(i<j) {
+	        			System.out.print(a[i][j] + " ");
+	                    sum += a[i][j];
+	        		}
+	        	}
 	        }
-	        
+	        System.out.println("Sum of upper diagonal elements = " + sum);
+
+	}
+
 }
-
-
-
-
-	    
-		
-	
-
-	
-
-
